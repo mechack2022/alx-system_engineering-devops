@@ -4,8 +4,11 @@
  | --------                | -------- |
 | Option | Description |
 | ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+| `set`  | list all local variable, envronmental variable and functions. |
+| `printenv` | list all environmental variables |
+| `export PATH="$PATH:/action"`   | add /action to the PATH. /action is the last directory to check directory |
 |`alias ls ="rm *" `   | Create a script that creates an alias. Name: ls Value: rm * |
 | `echo hello $USER`      | Create a script that prints hello user, where user is the current Linux user |
+|`BEST="School"` | create new local variable called School |
+|`export BEST="School"` | create a new global variable with the value School |
+
